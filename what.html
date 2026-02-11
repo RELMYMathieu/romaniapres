@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Argumentaire : Crise Électorale Roumaine</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/white.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+  :root {
+    --r-background-color: #ffffff;
+    --r-main-color: #374151;
+    --r-heading-color: #111827;
+    --r-heading-font: 'Merriweather', serif;
+    --r-main-font: 'Inter', sans-serif;
+    --ro-blue: #002B7F;
+    --ro-yellow: #FCD116;
+    --ro-red: #CE1126;
+    --shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  }
+
+  .reveal { font-family: var(--r-main-font); font-size: 28px; color: var(--r-main-color); }
+
+  .reveal h1,.reveal h2,.reveal h3,.reveal h4 {
+    font-family: var(--r-heading-font); color: var(--r-heading-color); line-height: 1.3;
+  }
+  .reveal h1 { font-size: 2.2em; font-weight: 900; margin-bottom: 0.5em; }
+  .reveal h2 {
+    font-size: 1.5em; font-weight: 700;
+    border-left: 6px solid var(--ro-blue);
+    padding-left: 20px; margin-bottom: 30px; text-align: left;
+  }
+  .reveal h3 { font-size: 0.9em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ro-blue); margin-bottom: 15px; }
+
+  .reveal .subtitle { font-family: 'Inter', sans-serif; font-size: 0.6em; color: #6B7280; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; margin-top: 10px; }
+
+  .reveal .flag-strip {
+    height: 6px; width: 80px;
+    background: linear-gradient(to right, var(--ro-blue) 33%, var(--ro-yellow) 33%, var(--ro-yellow) 66%, var(--ro-red) 66%);
+    margin: 0 auto 30px auto; border-radius: 4px;
+  }
+
+  .reveal .hl {
+    background: linear-gradient(120deg, rgba(252,209,22,0.3) 0%, rgba(252,209,22,0.3) 100%);
+    background-repeat: no-repeat; background-size: 100% 45%; background-position: 0 85%;
+    font-weight: 600; padding: 0 2px;
+  }
+
+  .reveal .two-col { display: flex; gap: 50px; align-items: flex-start; text-align: left; }
+  .reveal .two-col .col { flex: 1; }
+
+  .reveal .card {
+    background: white; border: 1px solid #E5E7EB;
+    padding: 22px; border-radius: 8px; box-shadow: var(--shadow);
+    margin-bottom: 18px; text-align: left;
+  }
+  .reveal .card h3 { border-bottom: 1px solid #eee; padding-bottom: 8px; font-size: 0.8em; }
+  .reveal .card p { font-size: 0.65em; line-height: 1.5; margin: 0; }
+
+  .reveal .stat-container { display: flex; gap: 20px; justify-content: center; margin: 20px 0; flex-wrap: wrap; }
+  .reveal .stat {
+    background: white; border: 1px solid #e5e7eb; border-bottom: 3px solid var(--ro-blue);
+    border-radius: 6px; padding: 12px 20px; text-align: center; min-width: 130px; box-shadow: var(--shadow);
+  }
+  .reveal .stat .num { display: block; font-size: 1.4em; font-weight: 800; color: var(--r-heading-color); }
+  .reveal .stat .label { font-size: 0.45em; text-transform: uppercase; color: #666; margin-top: 5px; }
+
+  .reveal ul { margin-left: 0; padding-left: 0; list-style: none; }
+  .reveal li { position: relative; padding-left: 20px; margin-bottom: 10px; font-size: 0.7em; }
+  .reveal li::before { content: '•'; color: var(--ro-blue); position: absolute; left: 0; font-weight: bold; }
+  .reveal li.no-dot::before { content: none; }
+
+  .reveal .quote-box {
+    font-family: var(--r-heading-font); font-size: 0.8em; font-style: italic; color: #111;
+    border-left: 4px solid var(--ro-blue); background: #EFF6FF;
+    padding: 15px 25px; margin: 20px 0; text-align: left;
+  }
+
+  .reveal .tag {
+    display: inline-block; background: #EEF2FF; color: var(--ro-blue);
+    padding: 3px 10px; border-radius: 15px; font-size: 0.5em; font-weight: 600;
+    margin: 3px; border: 1px solid #C7D2FE;
+  }
+
+  .reveal .slide-img {
+    border: 1px solid #ddd; border-radius: 8px; box-shadow: var(--shadow);
+    max-height: 220px; object-fit: contain; cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .reveal .slide-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px -4px rgba(0,0,0,0.18);
+  }
+
+  .reveal .map-box { flex: 1; text-align: center; }
+  .reveal .map-box img {
+    border: 1px solid #ddd; border-radius: 4px; box-shadow: var(--shadow);
+    max-height: 250px; object-fit: contain; cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .reveal .map-box img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px -4px rgba(0,0,0,0.18);
+  }
+  .reveal .map-label { font-size: 0.5em; color: #666; margin-top: 5px; display: block; }
+
+  .reveal .cite {
+    font-size: 0.6em; vertical-align: super; color: var(--ro-blue);
+    font-weight: bold; margin-left: 2px; text-decoration: none;
+  }
+
+  .reveal .ref-badge {
+    display: inline-block; background: var(--ro-blue); color: white;
+    padding: 1px 7px; border-radius: 4px; font-weight: 700; font-size: 0.95em;
+    margin-right: 6px;
+  }
+
+  .slide-footer {
+    position: absolute; bottom: -80px; left: 0; right: 0;
+    font-size: 0.4em; color: #9ca3af; border-top: 1px solid #eee;
+    padding-top: 10px; text-align: left; font-family: 'Inter', sans-serif;
+  }
+  .slide-footer strong { color: var(--ro-blue); margin-right: 5px; }
+
+  .reveal a { color: var(--ro-blue); text-decoration: none; }
+  .reveal a:hover { text-decoration: underline; }
+
+  /* — PART TITLE CARDS — */
+  .reveal .part-title {
+    font-family: var(--r-heading-font); font-weight: 700; color: var(--r-heading-color);
+    line-height: 1.3;
+  }
+  .reveal .part-number {
+    font-family: 'Inter', sans-serif; font-size: 0.35em; font-weight: 600;
+    color: var(--ro-blue); text-transform: uppercase; letter-spacing: 2px;
+    display: block; margin-bottom: 10px;
+  }
+
+  /* — LIGHTBOX — */
+  .lightbox-overlay {
+    position: fixed; inset: 0; z-index: 9999;
+    background: rgba(0,0,0,0.85);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.25s ease; cursor: zoom-out;
+  }
+  .lightbox-overlay.active { opacity: 1; pointer-events: auto; }
+  .lightbox-overlay img {
+    max-width: 90vw; max-height: 90vh;
+    border-radius: 6px; box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+    transform: scale(0.92); transition: transform 0.25s ease;
+  }
+  .lightbox-overlay.active img { transform: scale(1); }
+  .lightbox-caption {
+    position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
+    color: rgba(255,255,255,0.8); font-family: 'Inter', sans-serif;
+    font-size: 14px; letter-spacing: 0.5px;
+    background: rgba(0,0,0,0.4); padding: 6px 18px; border-radius: 20px;
+  }
+  .lightbox-close {
+    position: absolute; top: 20px; right: 28px;
+    color: rgba(255,255,255,0.7); font-size: 32px; font-weight: 300;
+    cursor: pointer; line-height: 1; transition: color 0.15s;
+    font-family: 'Inter', sans-serif;
+  }
+  .lightbox-close:hover { color: #fff; }
+</style>
+</head>
+<body>
+
+<div class="lightbox-overlay" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img src="" alt="">
+  <div class="lightbox-caption"></div>
+</div>
+
+<div class="reveal">
+<div class="slides">
+
+<!-- ══════════ SLIDE 1 — TITRE ══════════ -->
+<section data-background-image="rassemblement_drapeaux.png"
+         data-background-size="cover" data-background-position="center"
+         data-background-transition="fade">
+  <div style="background: rgba(0,0,0,0.55); padding: 50px 40px; border-radius: 12px; display: inline-block; max-width: 85%;">
+    <div class="flag-strip" style="margin-bottom: 20px;"></div>
+    <h1 style="color: #fff; text-shadow: 0 2px 12px rgba(0,0,0,0.4); margin-bottom: 0.3em;">Le Scandale de l'Élection<br>Présidentielle Roumaine de 2024</h1>
+    <p class="subtitle" style="color: rgba(255,255,255,0.8);">Argumentaire &amp; Analyse &nbsp;|&nbsp; La démocratie à l'épreuve</p>
+  </div>
+  <span style="position: absolute; bottom: 11px; right: 112px; font-size: 0.35em; color: rgba(255,255,255,0.5);">Photo : AP / Andreea Alexandru</span>
+</section>
+
+<!-- ══════════ SLIDE 2 — INDEX ══════════ -->
+<section>
+  <h2>Structure de l'argumentaire</h2>
+  <div style="display: flex; justify-content: center; text-align: left;">
+    <ul style="font-size: 0.9em; width: 80%; list-style: none; padding: 0; margin: 0;">
+      <li style="margin-bottom: 20px; padding-left: 0;" class="no-dot"><span class="hl">1.</span> Rappel : Qu'est-ce que la démocratie ?</li>
+      <li style="margin-bottom: 20px; padding-left: 0;" class="no-dot"><span class="hl">2.</span> La Roumanie en bref</li>
+      <li style="margin-bottom: 20px; padding-left: 0;" class="no-dot"><span class="hl">3.</span> Contexte politique pré-élection</li>
+      <li style="margin-bottom: 20px; padding-left: 0;" class="no-dot"><span class="hl">4.</span> Le "Choc" du 24 novembre (1er tour)</li>
+      <li style="margin-bottom: 20px; padding-left: 0;" class="no-dot"><span class="hl">5.</span> L'affaire Călin Georgescu</li>
+      <li style="margin-bottom: 20px; padding-left: 0;" class="no-dot"><span class="hl">6.</span> L'annulation historique</li>
+      <li style="margin-bottom: 20px; padding-left: 0;" class="no-dot"><span class="hl">7.</span> Les élections de 2025</li>
+    </ul>
+  </div>
+  <div class="slide-footer" style="bottom: -100px;">
+    <strong>Note de lecture :</strong> Les sources sont indiquées par un exposant (ex: <span class="cite">[1]</span>) et détaillées en fin de présentation.
+  </div>
+</section>
+
+<!-- ══════════ PART 1 TITLE — DÉMOCRATIE ══════════ -->
+<section data-auto-animate data-autoslide="1800">
+  <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+    <h2 data-id="t-demo" class="part-title" style="font-size: 2em; border: none; padding: 0; text-align: center;">
+      <span class="part-number">Partie 1</span>
+      Rappel : La Démocratie
+    </h2>
+  </div>
+</section>
+
+<!-- ══════════ SLIDE 3 — DÉMOCRATIE ══════════ -->
+<section data-auto-animate>
+  <h2 data-id="t-demo" style="font-size: 1.5em;">Rappel : La Démocratie</h2>
+  <div class="two-col">
+    <div class="col" style="flex: 1.1;">
+      <h3>Définition (Nations Unies)</h3>
+      <div class="quote-box" style="font-size: 0.7em;">
+        « La démocratie est un idéal universellement reconnu, fondé sur des valeurs communes partagées par les peuples du monde entier. Elle repose sur la volonté librement exprimée des peuples de déterminer leurs propres systèmes politiques, économiques, sociaux et culturels, et sur leur pleine participation à tous les aspects de leur vie. »
+      </div>
+      <p style="font-size: 0.5em; color: #666; margin-top: 5px;">— HCDH / ONU, La démocratie et les droits de l'homme<span class="cite">[6]</span></p>
+
+      <h3 style="margin-top: 20px;">DUDH — Article 21, §3</h3>
+      <div class="quote-box" style="border-left-color: var(--ro-yellow); background: #FFFBEB; font-size: 0.7em;">
+        « La volonté du peuple est le fondement de l'autorité des pouvoirs publics ; cette volonté doit s'exprimer par des élections honnêtes qui doivent avoir lieu périodiquement, au suffrage universel égal et au vote secret. »
+      </div>
+      <p style="font-size: 0.5em; color: #666; margin-top: 5px;">— Déclaration Universelle des Droits de l'Homme, 1948<span class="cite">[7]</span></p>
+    </div>
+    <div class="col" style="flex: 0.9;">
+      <h3>Éléments essentiels</h3>
+      <p style="font-size: 0.6em; color: #666; margin-bottom: 10px;">Commission des Droits de l'Homme, Rés. 2002/46 :</p>
+      <ul>
+        <li>Respect des <span class="hl">droits de l'homme</span> et des libertés fondamentales.</li>
+        <li>Une <span class="hl">séparation</span> des différents pouvoirs.</li>
+        <li>Élections <span class="hl">périodiques, libres et honnêtes</span> au suffrage universel.</li>
+        <li>Système possèdant une <span class="hl">pluralité</span> de partis politiques.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <strong>Sources :</strong> [6] Nations Unies — HCDH ; [7] DUDH, Article 21.
+  </div>
+</section>
+
+<!-- ══════════ PART 2 TITLE — ROUMANIE ══════════ -->
+<section data-auto-animate data-autoslide="1800">
+  <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+    <h2 data-id="t-ro" class="part-title" style="font-size: 2em; border: none; padding: 0; text-align: center;">
+      <span class="part-number">Partie 2</span>
+      La Roumanie en Bref
+    </h2>
+  </div>
+</section>
+
+<!-- ══════════ SLIDE 4 — ROUMANIE EN BREF ══════════ -->
+<section data-auto-animate>
+  <h2 data-id="t-ro" style="font-size: 1.5em;">La Roumanie en Bref</h2>
+  <div class="two-col" style="align-items: stretch; gap: 30px;">
+    <div class="col" style="flex: 1.1; display: flex; align-items: center; justify-content: center;">
+      <img class="slide-img" src="carte_roumanie.png" alt="Carte de la Roumanie"
+           data-lightbox-caption="La Roumanie au sein de l'Europe"
+           style="max-height: 480px; height: 100%; width: 100%; object-fit: contain; border: none; box-shadow: none;">
+    </div>
+    <div class="col" style="flex: 0.9; display: flex; flex-direction: column; justify-content: center;">
+      <div class="stat-container" style="justify-content: flex-start; margin: 0 0 10px 0; gap: 12px;">
+        <div class="stat" style="padding: 8px 16px;">
+          <span class="num">19 M</span>
+          <span class="label">Habitants<span class="cite">[8]</span></span>
+        </div>
+        <div class="stat" style="padding: 8px 16px;">
+          <span class="num">238 398</span>
+          <span class="label">km²<span class="cite">[8]</span></span>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 0; margin-bottom: 0; padding: 14px 18px;">
+        <h3 style="margin-bottom: 8px; padding-bottom: 6px;">Fiche d'identité</h3>
+        <p style="line-height: 1.7; font-size: 0.6em;">
+          <strong>Capitale :</strong> Bucarest<br>
+          <strong>Régime :</strong> République semi-présidentielle<br>
+          <strong>Monnaie :</strong> Leu roumain (RON)<br>
+          <strong>Membre de l'UE :</strong> depuis le <span class="hl">1er déc. 2007</span><span class="cite">[8]</span><br>
+          <strong>Espace Schengen :</strong> depuis le <span class="hl">1er janv. 2025</span><span class="cite">[8]</span><br>
+          <strong>PIB / hab. :</strong> 29 700 € <span style="font-size: 0.85em; color: #999;">(moy. UE : 38 100 €)</span><span class="cite">[8]</span><br>
+          <strong>Députés européens :</strong> 33
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <strong>Source :</strong> [8] Union Européenne — Fiche pays Roumanie (Eurostat 2025).
+  </div>
+</section>
+
+<!-- ══════════ PART 3 TITLE — CONTEXTE ══════════ -->
+<section data-auto-animate data-autoslide="1800">
+  <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+    <h2 data-id="t-ctx" class="part-title" style="font-size: 2em; border: none; padding: 0; text-align: center;">
+      <span class="part-number">Partie 3</span>
+      Contexte Politique
+    </h2>
+  </div>
+</section>
+
+<!-- ══════════ SLIDE 5 — CONTEXTE ══════════ -->
+<section data-auto-animate>
+  <h2 data-id="t-ctx" style="font-size: 1.5em;">Contexte Politique</h2>
+  <div class="two-col" style="gap: 40px; align-items: stretch;">
+    <div class="col" style="flex: 0.7; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <img class="slide-img" src="contexte_roumanie.png" alt="Klaus Iohannis"
+           data-lightbox-caption="Klaus Iohannis — Président de la Roumanie (2014–2025)"
+           style="max-height: 420px; width: 100%; object-fit: cover; border-radius: 8px;">
+      <span style="font-size: 0.4em; color: #9ca3af; margin-top: 6px;">Photo : Commission Européenne</span>
+    </div>
+    <div class="col" style="flex: 1.3;">
+      <div class="card">
+        <h3>Klaus Iohannis (2014–2025)</h3>
+        <p>Ancien maire de Sibiu (PNL), élu président en 2014 sur une promesse anti-corruption. Son second mandat est marqué par un recul de ces réformes et une perception croissante de déconnexion.<span class="cite">[4]</span><span class="cite">[12]</span></p>
+      </div>
+      <div class="card">
+        <h3>L'Usure du « Système »</h3>
+        <p><strong>PSD &amp; PNL</strong> (Pro-UE) — Perception de corruption stagnante depuis les années 2010. Le "système" est vu comme inefficace.<span class="cite">[4]</span></p>
+      </div>
+      <div class="card">
+        <h3>La montée de l'AUR</h3>
+        <p>Le parti de George Simion capte la colère populaire face à l'inflation et au déficit.</p>
+      </div>
+      <h3>Facteurs de crise</h3>
+      <ul>
+        <li>Inflation et taxes en hausse.<span class="cite">[4]</span></li>
+        <li>Demande sociale pour un <span class="hl">changement radical</span>.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <strong>Sources :</strong> [4] UK House of Commons Library ; [12] Wikipedia — Klaus Iohannis.<br>
+    <strong>Partis :</strong> PSD = Parti Social-Démocrate · PNL = Parti National Libéral · AUR = Alliance pour l'Union des Roumains.
+  </div>
+</section>
+
+<!-- ══════════ PART 4 TITLE — 1ER TOUR ══════════ -->
+<section data-auto-animate data-autoslide="1800">
+  <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+    <h2 data-id="t-t1" class="part-title" style="font-size: 2em; border: none; padding: 0; text-align: center;">
+      <span class="part-number">Partie 4</span>
+      Le "Choc" du 24 Novembre
+    </h2>
+  </div>
+</section>
+
+<!-- ══════════ SLIDE 6 — 1ER TOUR (vertical stack) ══════════ -->
+<section>
+<section data-auto-animate>
+  <h2 data-id="t-t1" style="font-size: 1.5em;">Călin Georgescu : Le Choc du 1er Tour (24 Nov.)</h2>
+  <div class="two-col" style="gap: 30px; align-items: stretch;">
+    <div class="col" style="flex: 1.3;">
+      <p style="font-size: 0.8em; margin-bottom: 15px;">Un candidat absent des sondages arrive en tête.</p>
+      <div class="stat-container" style="justify-content: flex-start; gap: 12px; flex-wrap: wrap;">
+        <div class="stat" style="min-width: 110px; padding: 10px 14px; border-bottom: 3px solid #9ca3af;">
+          <span class="num" style="font-size: 1.2em;">22,9%</span>
+          <span class="label">Georgescu (Ind.)<span class="cite">[2]</span></span>
+        </div>
+        <div class="stat" style="min-width: 110px; padding: 10px 14px; border-bottom: 3px solid #00A3E0;">
+          <span class="num" style="font-size: 1.2em;">19,2%</span>
+          <span class="label">Lasconi (USR)<span class="cite">[2]</span></span>
+        </div>
+        <div class="stat" style="min-width: 110px; padding: 10px 14px; border-bottom: 3px solid #ED1C24;">
+          <span class="num" style="font-size: 1.2em;">19,2%</span>
+          <span class="label">Ciolacu (PSD)<span class="cite">[2]</span></span>
+        </div>
+        <div class="stat" style="min-width: 110px; padding: 10px 14px; border-bottom: 3px solid #D4A017;">
+          <span class="num" style="font-size: 1.2em;">13,9%</span>
+          <span class="label">Simion (AUR)<span class="cite">[2]</span></span>
+        </div>
+      </div>
+      <p style="font-size: 0.55em; color: #666; margin-top: 10px;">Participation : <strong>52,5%</strong> · Lasconi qualifiée pour le 2nd tour avec seulement 2 740 voix d'avance sur Ciolacu.<span class="cite">[2]</span></p>
+      <div style="text-align: center; margin-top: 12px;">
+        <img class="slide-img" src="carte_1er_tour_2024.png" alt="Carte du 1er Tour 2024"
+             data-lightbox-caption="1er Tour 2024 — Résultats par département (élection annulée)"
+             style="max-height: 160px; object-fit: contain; border-radius: 8px;">
+        <span style="display: block; font-size: 0.4em; color: #9ca3af; margin-top: 4px;">Carte du 1er Tour 2024 · Cliquez pour agrandir</span>
+      </div>
+    </div>
+    <div class="col" style="flex: 0.7; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <img class="slide-img" src="portrait_georgescu.png" alt="Călin Georgescu"
+           data-lightbox-caption="Călin Georgescu — Candidat indépendant d'extrême droite"
+           style="max-height: 420px; width: 100%; object-fit: contain; border-radius: 8px; border: none; box-shadow: none;">
+      <span style="font-size: 0.4em; color: #9ca3af; margin-top: 6px;">Călin Georgescu — Source : France Info<span class="cite">[11]</span></span>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <strong>Sources :</strong> [2] ROAEP (Autorité Électorale) ; [11] France Info.<br>
+    <strong>Partis :</strong> PSD = Parti Social-Démocrate · PNL = Parti National Libéral · USR = Union Sauvez la Roumanie · AUR = Alliance pour l'Union des Roumains.
+  </div>
+</section>
+
+<!-- Sub-slide ↓ : sondages vs résultats -->
+<section>
+  <h2 style="font-size: 1.2em;">Sondages vs Résultats : Le Séisme</h2>
+  <p style="font-size: 0.65em; color: #666; text-align: left; margin-bottom: 15px;">Derniers sondages (novembre 2024) comparés aux résultats réels du 24 novembre.<span class="cite">[2]</span></p>
+  <table style="border-collapse: collapse; width: 90%; font-size: 0.6em; text-align: center; margin: 0 auto;">
+    <thead>
+      <tr style="border-bottom: 2px solid #333;">
+        <th style="text-align: left; padding: 8px 12px; width: 22%;">Candidat</th>
+        <th style="padding: 8px 12px; width: 13%;">Sondages</th>
+        <th style="padding: 8px 12px; width: 13%;">Résultat</th>
+        <th style="padding: 8px 50px 8px 12px; width: 52%;">Comparaison visuelle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid #eee;">
+        <td style="text-align: left; padding: 10px 12px; font-weight: 600;">Georgescu <span style="color: #9ca3af; font-weight: 400;">(Ind.)</span></td>
+        <td style="padding: 10px 12px; color: #999;">~5%</td>
+        <td style="padding: 10px 12px; font-weight: 700;">22,9%</td>
+        <td style="padding: 10px 12px; text-align: left;">
+          <div style="display: flex; align-items: center; gap: 4px;">
+            <div style="width: 50px; height: 18px; background: #d1d5db; border-radius: 3px; position: relative;"><span style="position: absolute; right: 4px; top: 1px; font-size: 0.85em; color: #666;">5%</span></div>
+            <span style="color: #999;">→</span>
+            <div style="width: 229px; height: 18px; background: linear-gradient(90deg, #9ca3af, #374151); border-radius: 3px; position: relative;"><span style="position: absolute; right: 6px; top: 1px; font-size: 0.85em; color: #fff; font-weight: 600;">22,9%</span></div>
+            <span style="font-size: 0.85em; font-weight: 700; color: var(--ro-blue); margin-left: 4px;">+18 pts !</span>
+          </div>
+        </td>
+      </tr>
+      <tr style="border-bottom: 1px solid #eee;">
+        <td style="text-align: left; padding: 10px 12px; font-weight: 600;">Ciolacu <span style="color: #ED1C24; font-weight: 400;">(PSD)</span></td>
+        <td style="padding: 10px 12px; color: #999;">~25%</td>
+        <td style="padding: 10px 12px; font-weight: 700;">19,2%</td>
+        <td style="padding: 10px 12px; text-align: left;">
+          <div style="display: flex; align-items: center; gap: 4px;">
+            <div style="width: 250px; height: 18px; background: #fca5a5; border-radius: 3px; position: relative;"><span style="position: absolute; right: 6px; top: 1px; font-size: 0.85em; color: #7f1d1d;">25%</span></div>
+            <span style="color: #999;">→</span>
+            <div style="width: 192px; height: 18px; background: #ED1C24; border-radius: 3px; position: relative;"><span style="position: absolute; right: 6px; top: 1px; font-size: 0.85em; color: #fff;">19,2%</span></div>
+            <span style="font-size: 0.85em; color: #666; margin-left: 4px;">−6 pts</span>
+          </div>
+        </td>
+      </tr>
+      <tr style="border-bottom: 1px solid #eee;">
+        <td style="text-align: left; padding: 10px 12px; font-weight: 600;">Simion <span style="color: #D4A017; font-weight: 400;">(AUR)</span></td>
+        <td style="padding: 10px 12px; color: #999;">~18%</td>
+        <td style="padding: 10px 12px; font-weight: 700;">13,9%</td>
+        <td style="padding: 10px 12px; text-align: left;">
+          <div style="display: flex; align-items: center; gap: 4px;">
+            <div style="width: 180px; height: 18px; background: #fde68a; border-radius: 3px; position: relative;"><span style="position: absolute; right: 6px; top: 1px; font-size: 0.85em; color: #78350f;">18%</span></div>
+            <span style="color: #999;">→</span>
+            <div style="width: 139px; height: 18px; background: #D4A017; border-radius: 3px; position: relative;"><span style="position: absolute; right: 6px; top: 1px; font-size: 0.85em; color: #fff;">13,9%</span></div>
+            <span style="font-size: 0.85em; color: #666; margin-left: 4px;">−4 pts</span>
+          </div>
+        </td>
+      </tr>
+      <tr style="border-bottom: 1px solid #eee;">
+        <td style="text-align: left; padding: 10px 12px; font-weight: 600;">Lasconi <span style="color: #00A3E0; font-weight: 400;">(USR)</span></td>
+        <td style="padding: 10px 12px; color: #999;">~12%</td>
+        <td style="padding: 10px 12px; font-weight: 700;">19,2%</td>
+        <td style="padding: 10px 12px; text-align: left;">
+          <div style="display: flex; align-items: center; gap: 4px;">
+            <div style="width: 120px; height: 18px; background: #a5d8f0; border-radius: 3px; position: relative;"><span style="position: absolute; right: 6px; top: 1px; font-size: 0.85em; color: #0c4a6e;">12%</span></div>
+            <span style="color: #999;">→</span>
+            <div style="width: 192px; height: 18px; background: #00A3E0; border-radius: 3px; position: relative;"><span style="position: absolute; right: 6px; top: 1px; font-size: 0.85em; color: #fff;">19,2%</span></div>
+            <span style="font-size: 0.85em; color: #666; margin-left: 4px;">+7 pts</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: left; padding: 10px 12px; font-weight: 600;">Ciucă <span style="color: #F5A623; font-weight: 400;">(PNL)</span></td>
+        <td style="padding: 10px 12px; color: #999;">~12%</td>
+        <td style="padding: 10px 12px; font-weight: 700;">8,8%</td>
+        <td style="padding: 10px 12px; text-align: left;">
+          <div style="display: flex; align-items: center; gap: 4px;">
+            <div style="width: 120px; height: 18px; background: #fde4a5; border-radius: 3px; position: relative;"><span style="position: absolute; right: 6px; top: 1px; font-size: 0.85em; color: #78350f;">12%</span></div>
+            <span style="color: #999;">→</span>
+            <div style="width: 88px; height: 18px; background: #F5A623; border-radius: 3px; position: relative;"><span style="position: absolute; right: 6px; top: 1px; font-size: 0.85em; color: #fff;">8,8%</span></div>
+            <span style="font-size: 0.85em; color: #666; margin-left: 4px;">−3 pts</span>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="quote-box" style="font-size: 0.6em; margin-top: 15px;">
+    « Les sondages le créditaient d'un maximum de 1% en septembre, puis ~5% début novembre. Le 24 novembre, il obtient 22,9%. »
+  </div>
+  <div class="slide-footer">
+    <strong>Sources :</strong> [2] ROAEP ; Sondages : CURS, Inscop, IRES (oct.–nov. 2024).<br>
+    <strong>Partis :</strong> PSD = Parti Social-Démocrate · PNL = Parti National Libéral · USR = Union Sauvez la Roumanie · AUR = Alliance pour l'Union des Roumains.
+  </div>
+</section>
+</section>
+
+<!-- ══════════ PART 5 TITLE — AFFAIRE ══════════ -->
+<section data-auto-animate data-autoslide="1800">
+  <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+    <h2 data-id="t-aff" class="part-title" style="font-size: 2em; border: none; padding: 0; text-align: center;">
+      <span class="part-number">Partie 5</span>
+      L'Affaire Georgescu
+    </h2>
+  </div>
+</section>
+
+<!-- ══════════ SLIDE 7 — AFFAIRE GEORGESCU ══════════ -->
+<section data-auto-animate>
+  <h2 data-id="t-aff" style="font-size: 1.5em;">L'Affaire Georgescu</h2>
+  <div class="two-col" style="align-items: flex-start;">
+    <div class="col">
+      <h3>Financement opaque</h3>
+      <ul>
+        <li><strong>Patrimoine :</strong> ~200 000€ déclarés.<span class="cite">[1]</span></li>
+        <li><strong>Budget Campagne :</strong> <span class="hl">0 € déclaré</span>.<span class="cite">[1]</span></li>
+        <li>Contradiction flagrante avec la qualité de la campagne numérique.</li>
+      </ul>
+      <div class="quote-box">
+        « Comment mener une campagne nationale virale avec zéro budget officiel ? »
+      </div>
+    </div>
+    <div class="col">
+      <h3>Faux Indépendant</h3>
+      <p style="font-size: 0.65em; margin-top: 0;">Officiellement "sans parti", il reçoit le soutien public de George Simion (AUR) dès la fin du 1er tour.</p>
+      <div style="text-align: center; margin-top: 15px;">
+        <img class="slide-img" src="georgescu_simion.png" alt="Georgescu et Simion"
+             data-lightbox-caption="Călin Georgescu et George Simion, à Bucarest le 4 mai 2025"
+             style="max-height: 250px;">
+        <span style="display: block; font-size: 0.4em; color: #9ca3af; margin-top: 4px;">Călin Georgescu et George Simion ©AFP — Daniel MIHAILESCU<span class="cite">[9]</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <strong>Source :</strong> [1] IFES (International Foundation for Electoral Systems).<br>
+    <strong>Parti :</strong> AUR = Alliance pour l'Union des Roumains.
+  </div>
+</section>
+
+<!-- ══════════ SLIDE 8 — RADICALISME ══════════ -->
+<section>
+  <h2>Radicalisme &amp; Ingérence</h2>
+  <div class="two-col" style="gap: 40px; align-items: stretch;">
+    <div class="col" style="flex: 1.3;">
+      <h3>Idéologie de Călin Georgescu</h3>
+      <div style="margin-bottom: 15px;">
+        <span class="tag">Pro-Russe</span>
+        <span class="tag">Anti-OTAN</span>
+        <span class="tag">Complotiste</span>
+      </div>
+      <ul>
+        <li>Qualifie le changement climatique d'« arnaque ».<span class="cite">[1]</span></li>
+        <li>Nie l'existence du coronavirus et des alunissages Apollo.<span class="cite">[1]</span></li>
+        <li>Théories ésotériques sur l'eau.<span class="cite">[1]</span></li>
+        <li>Décrit Vladimir Poutine comme un <span class="hl">« patriote et un leader »</span>.<span class="cite">[10]</span></li>
+      </ul>
+      <h3 style="margin-top: 20px;">La piste russe</h3>
+      <p style="font-size: 0.6em; margin-bottom: 8px;">La Roumanie, membre de l'OTAN frontalier de l'Ukraine, est une <span class="hl">cible stratégique</span> pour la Russie.<span class="cite">[10]</span></p>
+      <ul>
+        <li>Les services de renseignement roumains dénoncent des <span class="hl">« actions hybrides russes agressives »</span>.<span class="cite">[10]</span></li>
+        <li>Campagne TikTok financée par des fonds étrangers non déclarés (~1 M€).<span class="cite">[1]</span></li>
+      </ul>
+      <div class="stat-container" style="justify-content: flex-start;">
+        <div class="stat" style="border-bottom: none;">
+          <span class="num">85k</span>
+          <span class="label">Cyberattaques<span class="cite">[3]</span></span>
+        </div>
+        <div class="stat" style="border-bottom: none;">
+          <span class="num">25 000+</span>
+          <span class="label">Comptes TikTok suspects<span class="cite">[3]</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="col" style="flex: 0.7; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <img class="slide-img" src="campagne_tiktok.png" alt="Campagne TikTok de Georgescu"
+           data-lightbox-caption="Campagne virale sur TikTok — Călin Georgescu"
+           style="max-height: 420px; width: 100%; object-fit: contain; border-radius: 8px;">
+      <span style="font-size: 0.4em; color: #9ca3af; margin-top: 6px;">Source : TikTok</span>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <strong>Sources :</strong> [1] IFES ; [3] Fondation Robert Schuman ; [10] Wilson Center / Wikipedia.
+  </div>
+</section>
+
+<!-- ══════════ PART 6 TITLE — ANNULATION ══════════ -->
+<section data-auto-animate data-autoslide="1800">
+  <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+    <h2 data-id="t-ann" class="part-title" style="font-size: 2em; border: none; padding: 0; text-align: center;">
+      <span class="part-number">Partie 6</span>
+      L'Annulation Historique
+    </h2>
+  </div>
+</section>
+
+<!-- ══════════ SLIDE 9 — ANNULATION ══════════ -->
+<section data-auto-animate>
+  <h2 data-id="t-ann" style="font-size: 1.5em;">6 Déc. : Annulation Historique</h2>
+  <div class="two-col">
+    <div class="col">
+      <p style="font-size: 0.8em; font-family: var(--r-heading-font);">La Cour Constitutionnelle (CCR) annule l'intégralité du processus électoral.<span class="cite">[1]</span></p>
+      <div style="background: #EEF2FF; padding: 15px; border-radius: 8px; margin-top: 20px;">
+        <h4 style="margin: 0 0 10px 0; color: var(--ro-blue); font-size: 0.7em;">Les Motifs :</h4>
+        <ul style="margin: 0;">
+          <li>Fraude massive au financement.</li>
+          <li>Ingérence étrangère (Sécurité Nationale).</li>
+          <li>Distorsion de l'équité électorale.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <h3>Réactions</h3>
+      <ul>
+        <li>Georgescu : « C'est un acte barbare ».<span class="cite">[4]</span></li>
+        <li>Simion : « Un coup d'État du système ».<span class="cite">[4]</span></li>
+        <li>Manifestations massives à Bucarest.</li>
+      </ul>
+      <div style="text-align: center; margin-top: 15px;">
+        <img class="slide-img" src="manifspage7.png" alt="Manifestations à Bucarest"
+             data-lightbox-caption="Manifestations Pro-Européennes à Bucarest après l'annulation"
+             style="max-height: 320px; width: 100%; object-fit: cover; border-radius: 8px;">
+        <span style="display: block; font-size: 0.4em; color: #9ca3af; margin-top: 4px;">Manifestations Pro-Européennes à Bucarest — AFP ©</span>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <strong>Sources :</strong> [1] IFES ; [4] UK House of Commons Library.
+  </div>
+</section>
+
+<!-- ══════════ PART 7 TITLE — 2025 ══════════ -->
+<section data-auto-animate data-autoslide="1800">
+  <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+    <h2 data-id="t-2025" class="part-title" style="font-size: 2em; border: none; padding: 0; text-align: center;">
+      <span class="part-number">Partie 7</span>
+      Les Élections de 2025
+    </h2>
+  </div>
+</section>
+
+<!-- ══════════ SLIDE 10 — DÉNOUEMENT 2025 ══════════ -->
+<section data-auto-animate>
+  <h2 data-id="t-2025" style="font-size: 1.5em;">Le Dénouement (2025)</h2>
+  <div style="text-align: left;">
+    <ul style="font-size: 0.7em; margin-bottom: 15px;">
+      <li><strong>Mars 2025 :</strong> Georgescu inculpé et <span class="hl">interdit de candidature</span>.<span class="cite">[4]</span></li>
+      <li><strong>4 Mai (1er Tour) :</strong> Simion (41%) vs Nicușor Dan (21%).<span class="cite">[3]</span></li>
+      <li><strong>18 Mai (2nd Tour) :</strong> <span class="hl">Nicușor Dan élu (53,6%)</span>.<span class="cite">[5]</span></li>
+    </ul>
+  </div>
+  <div style="display: flex; gap: 20px; align-items: flex-end;">
+    <div style="flex: 1; display: flex; gap: 15px;">
+      <div class="map-box" style="flex: 1;">
+        <img src="carte_1er_tour_2025.png" alt="1er Tour 2025"
+             data-lightbox-caption="1er Tour — Simion (jaune) en tête dans les zones rurales"
+             style="width: 100%;">
+        <span class="map-label">1er Tour · Cliquez pour agrandir</span>
+      </div>
+      <div class="map-box" style="flex: 1;">
+        <img src="carte_2nd_tour_2025.png" alt="2nd Tour 2025"
+             data-lightbox-caption="2nd Tour — Dan (bleu) l'emporte grâce aux grandes villes"
+             style="width: 100%;">
+        <span class="map-label">2nd Tour · Cliquez pour agrandir</span>
+      </div>
+    </div>
+    <div style="flex: 0.55;">
+      <div class="card" style="border-top: 4px solid var(--ro-blue); margin-bottom: 0;">
+        <h3>Le Vainqueur : Nicușor Dan</h3>
+        <p>Ex-maire de Bucarest, pro-UE.</p>
+        <div style="text-align: right; font-weight: bold; color: var(--ro-blue); font-size: 1.2em; margin-top: 10px;">53,6 %</div>
+      </div>
+      <p style="font-size: 0.55em; color: #666; text-align: center; margin-top: 8px;">Participation record (64,7%) pour faire barrage à l'extrême droite.<span class="cite">[3]</span></p>
+    </div>
+  </div>
+  <p style="font-size: 0.4em; color: #9ca3af; text-align: center; margin-top: 8px;">Cartes : Cdrei — Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color: #9ca3af;">CC BY-SA 4.0</a></p>
+  <div class="slide-footer">
+    <strong>Sources :</strong> [3] Robert Schuman ; [4] UK Commons ; [5] CNN.<br>
+    <strong>Partis :</strong> AUR = Alliance pour l'Union des Roumains · USR = Union Sauvez la Roumanie.
+  </div>
+</section>
+
+<!-- ══════════ SLIDE 11 — SOURCES ══════════ -->
+<section>
+  <h2>Sources</h2>
+  <div style="display: flex; gap: 30px; align-items: flex-start;">
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 10px; font-size: 0.55em; text-align: left;">
+      <div style="border-bottom: 1px solid #eee; padding-bottom: 7px;">
+        <span class="ref-badge">[1]</span> <strong>IFES</strong> — <a href="https://www.ifes.org/publications/romanian-2024-election-annulment-addressing-emerging-threats-electoral-integrity" target="_blank">Romanian 2024 Election Annulment: Addressing Emerging Threats</a>
+      </div>
+      <div style="border-bottom: 1px solid #eee; padding-bottom: 7px;">
+        <span class="ref-badge">[2]</span> <strong>ROAEP</strong> — <a href="https://prezenta.roaep.ro/prezidentiale24112024/pv/romania/results/" target="_blank">Résultats officiels du 1er tour (Autorité électorale)</a>
+      </div>
+      <div style="border-bottom: 1px solid #eee; padding-bottom: 7px;">
+        <span class="ref-badge">[3]</span> <strong>Fondation Robert Schuman</strong> — <a href="https://www.robert-schuman.eu/en/monitor/6566-nicusor-dan-wins-the-presidential-election-in-romania" target="_blank">Nicusor Dan wins the presidential election</a>
+      </div>
+      <div style="border-bottom: 1px solid #eee; padding-bottom: 7px;">
+        <span class="ref-badge">[4]</span> <strong>UK House of Commons Library</strong> — <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10355/" target="_blank">Romania: The 2025 Election</a>
+      </div>
+      <div style="border-bottom: 1px solid #eee; padding-bottom: 7px;">
+        <span class="ref-badge">[5]</span> <strong>CNN</strong> — <a href="https://www.cnn.com/2025/05/18/europe/romania-presidential-election-result-intl-latam" target="_blank">Romania's pro-West candidate wins presidential election</a>
+      </div>
+      <div style="border-bottom: 1px solid #eee; padding-bottom: 7px;">
+        <span class="ref-badge">[6]</span> <strong>Nations Unies — HCDH</strong> — <a href="https://www.ohchr.org/fr/about-democracy-and-human-rights" target="_blank">La démocratie et les droits de l'homme</a>
+      </div>
+      <div style="border-bottom: 1px solid #eee; padding-bottom: 7px;">
+        <span class="ref-badge">[7]</span> <strong>Nations Unies</strong> — <a href="https://www.un.org/fr/about-us/universal-declaration-of-human-rights" target="_blank">Déclaration Universelle des Droits de l'Homme, Art. 21</a>
+      </div>
+      <div style="border-bottom: 1px solid #eee; padding-bottom: 7px;">
+        <span class="ref-badge">[8]</span> <strong>Union Européenne</strong> — <a href="https://european-union.europa.eu/principles-countries-history/eu-countries/romania_en" target="_blank">Fiche pays Roumanie (Eurostat 2025)</a>
+      </div>
+      <div style="border-bottom: 1px solid #eee; padding-bottom: 7px;">
+        <span class="ref-badge">[9]</span> <strong>Radio France</strong> — <a href="https://www.radiofrance.fr/franceculture/podcasts/journal-de-9h/journal-de-09h00-du-dimanche-04-mai-2025-8231234" target="_blank">Journal de 9h — 4 mai 2025 (Photo AFP / D. Mihailescu)</a>
+      </div>
+      <div style="border-bottom: 1px solid #eee; padding-bottom: 7px;">
+        <span class="ref-badge">[10]</span> <strong>Wilson Center</strong> — <a href="https://www.wilsoncenter.org/microsite/3/node/126302" target="_blank">In Search of Russia's Digital Trace in Romania's Political Crisis</a>
+      </div>
+      <div style="border-bottom: 1px solid #eee; padding-bottom: 7px;">
+        <span class="ref-badge">[11]</span> <strong>France Info</strong> — <a href="https://www.franceinfo.fr/politique/presidentielle-en-roumanie-l-inquietante-victoire-au-premier-tour-de-calin-georgescu-populiste-et-pro-russie_6919064.html" target="_blank">L'inquiétante victoire de Călin Georgescu (portrait)</a>
+      </div>
+      <div>
+        <span class="ref-badge">[12]</span> <strong>Wikipedia</strong> — <a href="https://en.wikipedia.org/wiki/Klaus_Iohannis" target="_blank">Klaus Iohannis — Biographie et présidence</a>
+      </div>
+    </div>
+    <div style="flex: 0 0 auto; text-align: center; padding-top: 5px;">
+      <img src="qrcodesources.png" alt="QR Code vers les sources"
+           data-lightbox-caption="QR Code — Accès direct aux sources"
+           class="slide-img"
+           style="max-height: 240px; border: none; box-shadow: none; border-radius: 4px;">
+      <span style="display: block; font-size: 0.45em; color: #666; margin-top: 6px;">Scanner pour accéder<br>aux sources</span>
+    </div>
+  </div>
+  <div class="slide-footer">
+    <strong>Note :</strong> Liste complète des références utilisées dans l'argumentaire.
+  </div>
+</section>
+
+<!-- ══════════ SLIDE 12 — FIN ══════════ -->
+<section>
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 100%;">
+    <div class="flag-strip" style="width: 60px;"></div>
+    <h2 style="border: none; padding-left: 0; margin-bottom: 10px; text-align: center; font-size: 1.9em;">Merci</h2>
+    <p style="font-family: 'Inter', sans-serif; font-size: 0.75em; color: #6B7280; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; margin: 0; text-align: center;">Des questions ?</p>
+  </div>
+</section>
+
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  slideNumber: 'c/t',
+  transition: 'fade',
+  backgroundTransition: 'fade',
+  controls: true,
+  progress: true,
+  center: true,
+  width: 1200,
+  height: 800,
+  minScale: 0.2,
+  maxScale: 2.0,
+  autoAnimateDuration: 0.8,
+  autoAnimateEasing: 'ease'
+});
+
+// Auto-advance title cards (forward only), skip them on backward nav
+(function() {
+  var prev = { h: 0, v: 0 }, timer = null;
+
+  Reveal.on('slidechanged', function(e) {
+    clearTimeout(timer);
+    var cur = { h: e.indexh, v: e.indexv };
+    var isTitle = e.currentSlide.hasAttribute('data-autoslide');
+    var forward = cur.h > prev.h || (cur.h === prev.h && cur.v > prev.v);
+
+    if (isTitle && forward) {
+      timer = setTimeout(function() { Reveal.next(); }, 1800);
+    } else if (isTitle && !forward) {
+      Reveal.prev();
+      return; // don't update prev so next backward skip still works
+    }
+    prev = cur;
+  });
+})();
+
+(function() {
+  var ov = document.getElementById('lightbox');
+  var img = ov.querySelector('img');
+  var cap = ov.querySelector('.lightbox-caption');
+
+  function open(src, caption) {
+    img.src = src;
+    cap.textContent = caption || '';
+    cap.style.display = caption ? '' : 'none';
+    ov.classList.add('active');
+  }
+
+  function close() { ov.classList.remove('active'); }
+
+  document.querySelectorAll('[data-lightbox-caption]').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.stopPropagation();
+      open(this.src, this.getAttribute('data-lightbox-caption'));
+    });
+  });
+
+  ov.addEventListener('click', close);
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
+})();
+</script>
+</body>
+</html>
